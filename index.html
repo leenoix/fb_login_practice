@@ -3,34 +3,27 @@
   <head> 
     <title>Facebook Login JavaScript Example</title> 
     <meta charset="UTF-8"> 
-    </head> 
+  	<script src="/script/index.js"></script>
+    <script src="https://use.fontawesome.com/e8f1ec470d.js"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/css/index.css"></link>
+  	</script>
+  </head>
   <body> 
-    <script> 
-      window.fbAsyncInit = function() {
-      FB.init({
-      appId : '1965247123751399',
-      xfbml : true,
-      version : 'v2.9'
-      });
-      FB.AppEvents.logPageView();
-      };
-
-      (function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/en_US/sdk.js";
-      fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
-
-      FB.getLoginStatus(function(response) {
-      console.log(response);
-      //statusChangeCallback(response);
-      });
-
-      
-      </script>
-    <fb:login-button scope="public_profile,email" onlogin="checkLoginState();"> </fb:login-button> 
-    <div id="status"> </div> 
+    <center><img class="logo" src = "/img/Logo.png"/></center>
+    <center><span class="brand">Find your destination</span></center>
+    <center><span class="brand">together</span></center>
+    <br>
+    <br>
+    <div class="facebook_button" onclick="yeah();">&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-facebook-official" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;SIGN-UP</div>
+    <div class="facebook_button" onclick="yeah();">&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-facebook-official" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;SING-IN</div>
+    <div id="status">
+      <center><a href="/address"><img id="profile" src="/img/default_profile.jpg" /></a></center>
+      <center class="welcome">Hello <span id="username">Mia</span>!</center>
+    </div>
     </body> 
 </html>

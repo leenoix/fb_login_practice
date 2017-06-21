@@ -1,0 +1,31 @@
+<!DOCTYPE html> 
+<html> 
+  <head> 
+    <title>Address Selection</title> 
+    <meta charset="UTF-8"> 
+  	<script src="https://use.fontawesome.com/e8f1ec470d.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSg_5yzo3VdhsnZ2TXzaR8XEXE2nVj8cQ&amp;libraries=places"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/css/address.css"></link>
+  	</script>
+    <script src="/script/address.js"></script>
+  </head>
+  <body> 
+    <div class="status_bar"><span class="title">Account</span></div>
+    <br>
+    <br>
+      <center><a href="/address"><img id="profile" src="/img/default_profile.jpg" /></a></center>
+      <center class="welcome">Nice to see you, <span id="username">Undefined</span>!</center>
+      <br>
+      <center><span class="info">To see travel times to trails,</span></center>
+      <center><span class="info">we need to know where you live.</span></center>
+      <br>
+      <br>
+      <center><i style="font-size:28px; color:rgb(68, 200, 242);margin-bottom:-12px;vertical-align: top" class="fa fa-home" aria-hidden="true"></i>&nbsp;<input id="inputtext" type="text" placeholder="Your home address"></input></center>
+      <center><div class="ok_button">OK</div></center>
+  </body> 
+</html>
